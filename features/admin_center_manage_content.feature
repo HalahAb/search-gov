@@ -260,6 +260,7 @@ Feature: Manage Content
     Then the "URL Prefix 1" field should contain "blog.agency4.gov"
     When I follow "View All"
     And I press "Remove"
+    And I wait for ajax
     Then I should see "You have removed News and Blog from this site"
 
   Scenario: View Routed Queries
